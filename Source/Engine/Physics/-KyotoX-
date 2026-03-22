@@ -1,4 +1,0 @@
-//This here will hold the files for the physics engine
-//Its named after the kyot meme in a livestream I was watching and I will fully commit to the bit of naming everything here out of Japanese Cities
-// It will be structured, Cityname-physicscategory.h/cpp
-// Depending on the cities relevance, a prominant city will represent big topic(ie: F=ma) while a not so big city will represent specific topic(ie: sp = J/g*C)
