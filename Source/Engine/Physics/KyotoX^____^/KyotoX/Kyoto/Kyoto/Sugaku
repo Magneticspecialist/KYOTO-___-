@@ -1,0 +1,17 @@
+#pragma once
+struct Rule
+{
+    std::string pattern;   // left side: what to match
+    std::string rewrite;   // right side: what to replace it with
+};
+std::vector<Rule> RuleTable = {
+    {"x^a / x^b", "x^(a-b)"},
+    {"x^a * x^b", "x^(a+b)"},
+    {"x^1", "x"},
+    {"x^0", "1"},
+    {"a*x + b*x", "(a+b)*x"}
+};
+Expression expr = parse("x^3 / x^2");
+expr = simplify(expr);
+expr.set("x", 2);
+std::cout << expr.evaluate() << std::endl;
